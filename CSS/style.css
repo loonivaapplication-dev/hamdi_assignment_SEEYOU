@@ -1,3 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap');
+
+body {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* default weight */
+  font-style: normal;
+}
+
+
 html {
   box-sizing: border-box;
 }
