@@ -7,7 +7,11 @@ html {
 
 body {
   font-family: 'Fredoka', Arial, sans-serif;
-  background-color: #FFF5F8; /* soft off-white */
+  background-color: #FFB6C1; /* pastel pink base */
+  background-image: radial-gradient(#FF4081 8%, transparent 12%),
+                    radial-gradient(#D6336C 8%, transparent 12%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
   margin: 0;
   padding: 20px;
   margin-top: 80px; /* adjust based on header height */
@@ -50,7 +54,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #D6336C; /* bold raspberry */
+  color: #D6336C; /* raspberry pink */
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -88,6 +92,8 @@ nav ul li ul.dropdown li a {
   justify-content: center;
   border: 3px solid #D6336C; /* strong accent */
   padding: 20px;
+  background-color: rgba(255, 245, 248, 0.9); /* soft overlay */
+  border-radius: 12px;
 }
 
 section {
@@ -96,17 +102,17 @@ section {
   padding: 20px;
   border: 1px dotted #FF4081; /* vibrant pink border */
   width: 240px;
-  border-radius: 12px; /* rounded corners */
+  border-radius: 12px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 section:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(214, 51, 108, 0.2); /* raspberry shadow */
+  box-shadow: 0 4px 10px rgba(214, 51, 108, 0.2);
 }
 
 .title {
-  background-color: #D6336C; /* raspberry header */
-  color: #FFF5F8;            /* light text */
+  background-color: #D6336C;
+  color: #FFF5F8;
   line-height: 3em;
   text-align: center;
   font-weight: 700;
@@ -116,7 +122,7 @@ section:hover {
 
 .price {
   font-weight: bold;
-  background: #FF4081; /* hot pink highlight */
+  background: #FF4081;
   color: #FFF5F8;
   padding: 8px;
   width: 100%;
