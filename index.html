@@ -9,17 +9,41 @@
 <body>
     <div id="container">
     <header>
-        <nav>
-            <ul>
-                <li><a href= "index.html"> Home</a></li>
-                <li><a href="#categories"> Categories</a></li>
-                <li><a href="pages/about.html"> About</a></li>
-                <li><a href="#contact"> Contact</a></li>
-            </ul>
-        </nav>
-        <h1><img src="images/logo.png" alt="SeeYou Logo" class="logo"></h1>
-        <p>See. Choose. Enjoy.</p>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            
+            <li>
+                <a href="#categories">Categories</a>
+                <ul class="dropdown">
+                    <li><a href="pages/snacks.html">Snacks</a></li>
+                    <li><a href="pages/drinks.html">Drinks</a></li>
+                    <li><a href="pages/dessert.html">Desserts</a></li>
+                    <li><a href="pages/stationary.html">Stationary</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="pages/about.html">About</a>
+                <ul class="dropdown">
+                    <li><a href="pages/about.html#team">Our Team</a></li>
+                    <li><a href="pages/about.html#mission">Mission</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#contact">Contact</a>
+                <ul class="dropdown">
+                    <li><a href="mailto:info@seeyou.com">Email Us</a></li>
+                    <li><a href="pages/contact.html">Contact Form</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <h1><img src="images/logo.png" alt="SeeYou Logo" class="logo"></h1>
+    <p>See. Choose. Enjoy.</p>
+</header>
+
 
     <main>
         <h2 id="categories">Categories</h2>
