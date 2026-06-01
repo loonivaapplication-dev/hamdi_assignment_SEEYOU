@@ -8,13 +8,14 @@ html {
 body {
   font-family: 'Fredoka', Arial, sans-serif;
   background-color: #FFB6C1; /* pastel pink base */
-  background-image: radial-gradient(#FF4081 8%, transparent 12%),
-                    radial-gradient(#D6336C 8%, transparent 12%);
+  /* Transparent dotted pattern */
+  background-image: radial-gradient(rgba(255, 64, 129, 0.15) 8%, transparent 12%),
+                    radial-gradient(rgba(214, 51, 108, 0.15) 8%, transparent 12%);
   background-size: 60px 60px;
   background-position: 0 0, 30px 30px;
   margin: 0;
   padding: 20px;
-  margin-top: 80px; /* adjust based on header height */
+  margin-top: 80px;
   line-height: 1.6em;
   color: #333;
 }
@@ -28,7 +29,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #FFB6C1; /* pastel pink */
+  background: #FFB6C1;
   padding: 10px 20px;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -54,12 +55,12 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #D6336C; /* raspberry pink */
+  color: #D6336C;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 nav ul li a:hover {
-  color: #FF4081; /* hot pink hover */
+  color: #FF4081;
 }
 
 /* Dropdown menu */
@@ -90,17 +91,17 @@ nav ul li ul.dropdown li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 3px solid #D6336C; /* strong accent */
+  border: 3px solid #D6336C;
   padding: 20px;
-  background-color: rgba(255, 245, 248, 0.9); /* soft overlay */
+  background-color: rgba(255, 245, 248, 0.9);
   border-radius: 12px;
 }
 
 section {
-  background: #FFB6C1; /* pastel pink card */
+  background: #FFB6C1;
   margin: 10px;
   padding: 20px;
-  border: 1px dotted #FF4081; /* vibrant pink border */
+  border: 1px dotted #FF4081;
   width: 240px;
   border-radius: 12px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -131,9 +132,10 @@ section:hover {
   font-size: 1.1em;
 }
 
+/* ===== Consistent Image Sizes ===== */
 section img {
   width: 100%;
-  height: 150px;
-  object-fit: cover;
+  height: 180px; /* unified height */
+  object-fit: cover; /* crops to fit nicely */
   border-radius: 8px;
 }
